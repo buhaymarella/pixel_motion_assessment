@@ -1,0 +1,9 @@
+Responsive Development (Bootstrap)
+ 
+Objective: Create a responsive page with the provided PSDs using HTML, CSS, JS and Bootstrap. 
+
+Format:  Mobile first responsive site using breakpoints (media-queries) and fixed widths on the container. It should not be fluid. 
+
+Deliverables:  HTML, CSS, JS files
+
+Additional Information:  The page should not use existing systems such as WordPress or Drupal. Bootstrap framework and the candidate’s own code should be used.  The primary goal of this test is to identify attention to detail, best practices and logic in problem solving within page development. Use of Google web fonts is acceptable. Notes are provided in the PSD for additional information about each section. 

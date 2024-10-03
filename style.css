@@ -1,0 +1,145 @@
+:root{
+    /* font text size */
+    --hero-text: 90px; /* h1 hero text */
+    --sub-hero: 24px; /* h4  for button in hero, sub text */
+    --nav-text: 18px; /* p for nav text */
+    --contact-text: 32px; /* h2 for logo and contact text */
+    --main-section-box: 30px; /* h3 for shape text */
+
+    /* color  */
+    --main-font: 'Source Sans Pro', sans-serif;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    max-width: 100%;
+    font-family: var(--main-font);
+}
+h2{
+    font-size: var(--contact-text);
+    font-weight: 700;
+}
+h1{
+    font-size: var(--hero-text);
+}
+h3{
+    font-size: var(--main-section-box);
+    font-weight: 700;
+}
+
+p, btn-text, h4{
+    font-size: var(--sub-hero);
+}
+.card-text-sm{
+    font-size: 20px;
+}
+.header-txt{
+    font-size: 70px;
+}
+
+
+/* transition */
+.animation{
+    animation: fadeInUp 2s 2ms ease-in-out;
+}
+.animation2{
+    animation: fadeInUp 4s 2ms ease-in-out;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.hero-container{
+    min-height: 80vh;
+}
+.hero-section{
+    background-image: url('img/hero-img.png');
+    background-size: 100%;
+    background-repeat: no-repeat ;
+    background-position: center;
+    max-width: 100%;
+    overflow: hidden;
+}
+.img-hero{
+    position: relative;
+    top: 2rem;
+    height:auto;
+}
+.layer-one .h1{
+    left: 10rem;
+}
+.hover:hover{
+    transition: 2ms 0.5s ease-in-out;
+    text-decoration: underline;
+}
+.img-hover:hover{
+    transform: scale(120%) translateY(10%) rotate(-3deg);
+    transition: .2s 4ms ease-in-out;
+}
+
+
+@media screen and (max-width: 948px){ /* adjustment for tablet */
+    h2{
+        font-size: var(--sub-hero);
+    }
+    h1{
+        font-size:  60px;
+    }
+    p, btn-text{
+        font-size: var(--nav-text);
+    }
+    .hero-section{
+        background-size: 300%;
+        background-position: 22%;
+    }
+    .hero-container{
+        min-height: 50vh;
+    }
+    .card-text {
+        font-size: 30px;
+    }
+    .card-text-sm{
+        font-size: 20px;
+    }
+    .header-txt{
+        font-size: 5rem;
+    }
+}
+@media screen and (max-width: 576px) { /* adjustment for phone */
+    .contact-info{
+        justify-content: center !important;
+    }
+    .brand-logo{
+        width: 200px;
+    }
+    .sales{
+        font-weight: 400;
+    }
+    h1{
+        font-size:  44px;
+    }
+    p, btn-text{
+        font-size: var(--nav-text);
+    }
+    .hero-section{
+        background-size: 400%;
+        background-position: 25%;
+    }
+    .card-text{
+        font-size: 15px;
+    }
+    .card-text-sm{
+        font-size: 12px;
+    }
+    .header-txt{
+        font-size: 2rem;
+    }
+}
